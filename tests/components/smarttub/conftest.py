@@ -71,7 +71,6 @@ def mock_spa():
             "cleanupCycle": "INACTIVE",
         },
     )
-
     mock_circulation_pump = create_autospec(smarttub.SpaPump, instance=True)
     mock_circulation_pump.id = "CP"
     mock_circulation_pump.spa = mock_spa
